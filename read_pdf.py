@@ -11,9 +11,9 @@ import PyPDF2
 import os
 
 os.getcwd()
-os.chdir("C:\\Users\\theod\\Desktop\\Resume and Cover Letter")
+os.chdir("C:\\Users\\$PATH\\$PATH\\$[ATH")
 
-pdfreader = PyPDF2.PdfReader("Theodore Verona CV FS (ENG).pdf")
+pdfreader = PyPDF2.PdfReader("#FILENAME.pdf")
 speaker = pyttsx3.init()
 
 for page_num in range(len(pdfreader.pages)):
@@ -21,7 +21,7 @@ for page_num in range(len(pdfreader.pages)):
     clean_text = text.strip().replace('\n', " ")
     print(clean_text)
 
-speaker.save_to_file(clean_text, "Resume_FS.mp3")
+speaker.save_to_file(clean_text, "#NAMEYOURFILE.mp3")
 speaker.runAndWait()
 
 speaker.stop()
